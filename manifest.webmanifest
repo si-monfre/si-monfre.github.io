@@ -1,7 +1,7 @@
 {
-  "name": "SIMONFRÉ - Sistem Informasi Penggajian dan Pelaporan",
-  "short_name": "SIMONFRÉ",
-  "description": "Sistem Informasi Penggajian dan Pelaporan Monfre Studio",
+  "name": "SuperApp Monfre Studio",
+  "short_name": "SuperApp Monfre",
+  "description": "Aplikasi internal tim Monfre Studio",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#faf7f2",
