@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SI-MONFRE | Sistem Penggajian & Laporan Monfre Studio</title>
+<meta name="description" content="SI-MONFRE: sistem penggajian dan laporan keuangan Monfre Studio, Lamongan.">
+<meta name="theme-color" content="#8a5a2b">
+<link rel="icon" type="image/png" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+  html,body{margin:0;height:100%;background:#faf7f2;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+  #app{position:fixed;inset:0;width:100%;height:100%;border:0;display:block}
+  #loading{position:fixed;inset:0;display:grid;place-items:center;color:#8a5a2b;text-align:center}
+  #loading img{width:84px;height:84px;object-fit:contain;margin-bottom:12px}
+  #loading b{display:block;font-size:20px;letter-spacing:.5px}
+</style>
+</head>
+<body>
+<div id="loading"><div><img src="logo.png" alt="" onerror="this.remove()"><b>SI-MONFRE</b><small>Memuat aplikasi...</small></div></div>
+<!-- GANTI URL di bawah dengan URL Aplikasi Web Apps Script (diakhiri /exec) -->
+<iframe id="app" src="https://script.google.com/macros/s/GANTI_DENGAN_ID_DEPLOYMENT/exec"
+  allow="clipboard-write" onload="document.getElementById('loading').style.display='none'"></iframe>
+</body>
+</html>
