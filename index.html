@@ -24,6 +24,15 @@
 <iframe id="app" src="https://script.google.com/macros/s/AKfycbzeJGj5eF_MBaNJWPkCJysB2p0PLfp4i1ur4UyASo8RHzivRJxMFlIRzGyBsU-N7NhX/exec"
   allow="clipboard-write" onload="document.getElementById('loading').style.display='none'"></iframe>
 <script>
+  // link nota pelanggan: si-monfre.github.io/?nota=KODE diteruskan ke halaman nota online
+  (function () {
+    var q = location.search || '';
+    if (/[?&]nota=/.test(q)) {
+      var f = document.getElementById('app');
+      f.src = f.src.split('?')[0] + q;
+      document.title = 'Nota Monfre Studio';
+    }
+  })();
   // kalau lebih dari 20 detik belum tampil, beri petunjuk
   setTimeout(function () {
     var l = document.getElementById('loading');
